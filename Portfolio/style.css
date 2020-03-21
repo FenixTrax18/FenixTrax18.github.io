@@ -1,0 +1,34 @@
+
+.card-header{
+    color:white;
+}
+.card{
+    margin: 20px;
+    margin-bottom: 40px;
+}
+.card-text{
+    text-align: center;
+    font-weight: bold;
+}
+.container{
+    margin-bottom: 20px;
+}
+
+.portfolio .card{
+    max-width: 286px;
+}
+
+.portfolio img{
+    width: 100%;
+}
+
+.pageFooter{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: darkblue;
+    text-align: center;
+    color: white;
+    font-weight: bold;
+}
