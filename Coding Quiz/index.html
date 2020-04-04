@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+    <link rel="stylesheet" href="style.css"/>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+  </head>
+
+  <body>
+    <!--NAVBAR-->
+    <nav>
+        <div>
+            <a onclick="return false" id="sbLink">View High Scores</a>
+        </div>
+        <div>
+            <a onclick="return false" id="countdown">Timer</a>
+        </div>
+    </nav>
+
+    <!-- Cover -->
+    <main class="container" id="Cover">
+        <header class="row">
+            <div class="page-header">
+                <h1>Coding Quiz Challenge</h1>
+                <hr>
+            </div>
+        </header>
+    
+        <section class="row">
+            <summary>
+                Try to answer the following code-related quiz questions within the time limit. Keep in mind that incorrect answers will penalize your score time by 10 seconds.
+            </summary>
+            <button id="startBtn">Start Quiz</button>
+        </section>
+    </main>
+
+    <!-- Question1 -->
+    <main class="container Questions hidden" id="Question1">
+        <section class="row">
+            <summary>
+                Commonly used data types do NOT include:
+                    <button correct="false">1. Strings</button>
+                    <button correct="false">2. Booleans</button>
+                    <button correct="true">3. Alerts</button>
+                    <button correct="false">4. Numbers</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+    <!-- Question2 -->
+    <main class="container Questions hidden" id="Question2">
+        <section class="row">
+            <summary>
+                The condition within an if/else statement is enclosed within:
+                    <button correct="false">1. Quotes</button>
+                    <button correct="false">2. Curly brackets</button>
+                    <button correct="true">3. Parentheses</button>
+                    <button correct="false">4. Square brackets</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+    <!-- Question3 -->
+    <main class="container Questions hidden" id="Question3">
+        <section class="row">
+            <summary>
+                Arrays in JS can be used to store:
+                    <button correct="false">1. Numbers and strings</button>
+                    <button correct="false">2. Other arrays</button>
+                    <button correct="false">3. Booleans</button>
+                    <button correct="true">4. All the above</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+  
+    <!-- Question4 -->
+    <main class="container Questions hidden" id="Question4">
+        <section class="row">
+            <summary>
+                String values must be enclosed within:
+                    <button correct="false">1. Commas</button>
+                    <button correct="false">2. Curly brackets</button>
+                    <button correct="true">3. Quotes</button>
+                    <button correct="false">4. Parentheses</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+  
+    <!-- Question5 -->
+    <main class="container Questions hidden" id="Question5">
+        <section class="row">
+            <summary>
+                A very useful tool used during development and debugging for printing content to the debugger is:
+                    <button correct="false">1. JavaScript</button>
+                    <button correct="false">2. Terminal/bash</button>
+                    <button correct="false">3. For loops</button>
+                    <button correct="true">4. console.log</button>
+            </summary>
+        </section>
+        <hr>
+    </main>
+
+    <!-- Footer for correct/incorrect answer below each question -->
+    <footer class="hidden" id="correctFooter">
+        Correct! Good job!
+    </footer>
+
+    <footer class="hidden" id="incorrectFooter">
+        Incorrect. Try again.
+    </footer>
+
+    <!-- Enter initals page -->
+    <main class="container hidden" id="inputScoreInfo">
+        <header class="row">
+            <div class="page-header">
+                <h1>Congratulations!</h1>
+                <hr>
+            </div>
+        </header>
+    
+        <section>
+            <summary>
+                Your final score is: <span id="finalScore"></span>
+            </summary>
+            <summary>
+                Enter your initials:
+                <input id=initalsInput type="text">
+            </summary>
+            <button id=initalsSubmit>Submit</button>
+        </section>
+    </main>
+        
+    <!-- Scoreboard -->
+    <main class="container hidden" id="score-card">
+        <header class="row">
+            <div class="page-header">
+                <h1>Scoreboard</h1>
+                <hr>
+            </div>
+        </header>
+    
+        <section>
+            <ol id="scoreboard">
+                <!-- list top 5 scores -->
+            </ol>
+            <div class="sbbtns">
+                <button id="tryAgain">Try Again</button>
+                <button id="clearBtn">Clear Scoreboard</button>
+            </div>
+        </section>
+    </main>
+
+
+    <script src="script.js">
+    </script>
+  </body>
+</html>
