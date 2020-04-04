@@ -211,8 +211,3 @@ function rightAnswer(btnEl){
   }
   return isCorrect;
 }
-
-
-
-  
-// //buttons to wire
