@@ -39,6 +39,9 @@ for(var i = 1; i < 11; i++) {
 //initalize function run on page startup
 function initalize(){
     storedEventsArr = JSON.parse(localStorage.getItem("storedEventsArr"));
+    if (storedEventsArr == null){
+        var storedEventsArr = ["","","","","","","","","",""];
+    }
     //looping through textareas and setting the stored value
     for (var i = 1; i < 11; i++) {
         var eventInput = document.querySelector("#eventInput" + i);
