@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.8.1/css/all.css"
+      integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Work Day Scheduler</title>
+  </head>
+
+  <body>
+    <header class="jumbotron">
+      <h1 class="display-3"><span>&#9884</span> Work Day Scheduler <span>&#9884</span></h1>
+      <p class="lead">A simple calendar app for scheduling your work day</p>
+      <!-- Insert Current Day here -->
+      <p id="currentDay" class="lead"></p>
+    </header>
+    <div class="time-block container table-responsive">
+      <!-- Timeblocks go here -->
+      <table class="table-bordered table-hover" id="timeblocksTable">
+        <thead>
+          <tr class="nbsRowHeading nbsrow">
+            <th scope="col">Time</th>
+            <th colspan="2">Event</th>
+            <th scope="col">Save</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr currentHour = "8">
+            <th class="nbsrow">8:00AM</th>
+            <td colspan="2">
+              <textarea id=eventInput1 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn1">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "9">
+            <th class="nbsrow">9:00AM</th>
+            <td colspan="2">
+              <textarea id=eventInput2 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn2">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "10">
+            <th class="nbsrow">10:00AM</th>
+            <td colspan="2">
+              <textarea id=eventInput3 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn3">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "11">
+            <th class="nbsrow">11:00AM</th>
+            <td colspan="2">
+              <textarea id=eventInput4 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn4">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "12">
+            <th class="nbsrow">12:00PM</th>
+            <td colspan="2">
+              <textarea id=eventInput5 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn5">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "13">
+            <th class="nbsrow">1:00PM</th>
+            <td colspan="2">
+              <textarea id=eventInput6 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn6">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "14">
+            <th class="nbsrow">2:00PM</th>
+            <td colspan="2">
+              <textarea id=eventInput7 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn7">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "15">
+            <th class="nbsrow">3:00PM</th>
+            <td colspan="2">
+              <textarea id=eventInput8 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn8">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "16">
+            <th class="nbsrow">4:00PM</th>
+            <td colspan="2">
+              <textarea id=eventInput9 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn9">&#128190 Save</button>
+            </td>
+          </tr>
+          <tr currentHour = "17">
+            <th class="nbsrow">5:00PM</th>
+            <td colspan="2">
+              <textarea id=eventInput10 type="text" placeholder="Your event here"></textarea>
+            </td>
+            <td>
+              <button type="button" class="saveBtn" id="saveBtn10">&#128190 Save</button>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+      </table>
+
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
+    <script src="./scriptJQ.js"></script>
+  </body>
+</html>
+
+<footer>
+  &copy A Hoppy Original <span>&#9884</span>
+</footer>
