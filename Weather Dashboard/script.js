@@ -89,7 +89,7 @@ $.ajax({
       $("#city").text(city);
 
       var icon = (response.weather[0].icon)
-      $("#icon").attr("src", "http://openweathermap.org/img/wn/" + icon + "@2x.png");
+      $("#icon").attr("src", "https://openweathermap.org/img/wn/" + icon + "@2x.png");
 
       var temp = (response.main.temp);
       //convert to F
