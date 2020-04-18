@@ -66,7 +66,7 @@ $.ajax({
 
   function getWeather(cityName, cityArr){
     var weatherByCityURL = "https://api.openweathermap.org/data/2.5/weather?q=" + cityName + "&appid=" + apiKey;
-    console.log("currnetWeather: " + weatherByCityURL);
+    console.log("currentWeather: " + weatherByCityURL);
 
     // api call for current weather of city
     $.ajax({
