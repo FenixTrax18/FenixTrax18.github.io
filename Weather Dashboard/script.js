@@ -6,7 +6,7 @@ var searchBtnEl = document.querySelector("#searchBtn");
 var cityInputEl = document.querySelector("#cityInput");
 var cityArr = [];
 var cityName = cityArr[0];
-var queryURL = "http://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=";
+var queryURL = "https://api.openweathermap.org/data/2.5/forecast?id=524901&APPID=";
 var apiKey = "138aff0a68fe85b05db96a1e3f435379";
 
 $.ajax({
