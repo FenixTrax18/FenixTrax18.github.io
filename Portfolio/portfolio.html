@@ -7,6 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>My Portfolio</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
   <link rel="stylesheet" href="style.css"/>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
@@ -23,17 +24,29 @@
 
     <div class="collapse navbar-collapse" id="navbarSupportedContent">
       <ul class="navbar-nav mr-auto">
-        <!--HOME BUTTON-->
+         <!--HOME BUTTON-->
+         <li class="nav-item">
+          <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+        </li>
+        <!--PORTFOLIO BUTTON/DROPDOWN MENU-->
+        <li class="nav-item active dropdown">
+          <a class="nav-link" href="portfolio.html">Portfolio</a>
+        </li>
+        <!-- GitHub -->
         <li class="nav-item">
-            <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="https://github.com/FenixTrax18" target="_blank">GitHub<span class="sr-only"></span></a>
+        </li>
+        <!-- LinkedIn -->
+        <li class="nav-item">
+          <a class="nav-link" href="https://www.linkedin.com/in/juliahopkinsms/" target="_blank">LinkedIn <span class="sr-only"></span></a>
+        </li>
+        <!-- Resume -->
+        <li class="nav-item">
+          <a class="nav-link" href="assets/Julia Hopkins Resume.pdf">Resume<span class="sr-only"></span></a>
         </li>
         <!--CONTACT BUTTON-->
         <li class="nav-item">
           <a class="nav-link" href="contact.html">Contact</a>
-        </li>
-        <!--PORTFOLIO BUTTON/DROPDOWN MENU-->
-        <li class="nav-item active">
-          <a class="nav-link" href="portfolio.html">Portfolio</a>
         </li>
       </ul>
     </div>
@@ -54,18 +67,22 @@
     <section class="row">
       <div class="col-sm-6 col-xs-12">
         <div class="card">
-          <img src="http://www.papertraildesign.com/wp-content/uploads/2018/07/Scrabble-tile-W-wood.jpg" alt="...">
+          <img src="assets/PasswordGeneratorSS.PNG" class="card-img-top" alt="Password Generator Screenshot">
           <div class="card-body">
-            <p class="card-text">Word Guess</p>
+            <a class="card-text" href="https://fenixtrax18.github.io/Password-Generator/">Password Generator</a>
+            <br>
+            <a class="card-text" href="https://github.com/FenixTrax18/Password-Generator">GitHub Repo</a>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-xs-12">
         <div class="card">
-          <img src="https://www.freeiconspng.com/uploads/d20-icon-19.jpeg" class="card-img-top" alt="...">
+          <img src="assets/CodingQuizSS.PNG" class="card-img-top" alt="Coding Quiz Screenshot">
           <div class="card-body">
-            <p class="card-text">RPG Game</p>
+            <a class="card-text" href="https://fenixtrax18.github.io/Coding-Quiz/">Coding Quiz</a>
+            <br>
+            <a class="card-text" href="https://github.com/FenixTrax18/Coding-Quiz">GitHub Repo</a>
           </div>
         </div>
       </div>
@@ -75,18 +92,22 @@
     <section class="row">
       <div class="col-sm-6 col-xs-12">
         <div class="card">
-          <img src="https://www.blufftonsc.com/wp-content/uploads/769306fa21cc7bbf9a65d276a5988b3d.jpg" class="card-img-top" alt="...">
+          <img src="assets/WorkdayPlannerSS.PNG" class="card-img-top" alt="Workday Planner Screenshot">
           <div class="card-body">
-            <p class="card-text">Trivia Game</p>
+            <a class="card-text" href="https://fenixtrax18.github.io/Workday-Planner/">Workday Planner</a>
+            <br>
+            <a class="card-text" href="https://github.com/FenixTrax18/Workday-Planner">GitHub Repo</a>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-xs-12">
         <div class="card">
-          <img src="https://images-na.ssl-images-amazon.com/images/I/71jpY2MZADL._SY355_.png" class="card-img-top" alt="...">
+          <img src="assets/WeatherDashboardSS.PNG" class="card-img-top" alt="Weather Dashboard Screenshot">
           <div class="card-body">
-            <p class="card-text">Info Widget</p>
+            <a class="card-text" href="https://fenixtrax18.github.io/Weather-Dashboard/">Weather Dashboard</a>
+            <br>
+            <a class="card-text" href="https://github.com/FenixTrax18/Weather-Dashboard">GitHub Repo</a>
           </div>
         </div>
       </div>
@@ -96,18 +117,22 @@
     <section class="row">
       <div class="col-sm-6 col-xs-12">
         <div class="card">
-          <img src="https://d3qdvvkm3r2z1i.cloudfront.net/media/catalog/product/cache/1/image/1800x/6b9ffbf72458f4fd2d3cb995d92e8889/r/o/rockpaperscissorslizardspock_newthumb.png" class="card-img-top" alt="...">
+          <img src="assets/PantryBuddySS.PNG" class="card-img-top" alt="Pantry Buddy Screenshot">
           <div class="card-body">
-            <p class="card-text">Rock, Paper, Scissors</p>
+            <a class="card-text" href="https://fenixtrax18.github.io/project_1_pantry_buddy/">Pantry Buddy</a>
+            <br>
+            <a class="card-text" href="https://github.com/FenixTrax18/project_1_pantry_buddy">GitHub Repo</a>
           </div>
         </div>
       </div>
 
       <div class="col-sm-6 col-xs-12">
         <div class="card">
-          <img src="https://cdn2.bigcommerce.com/server3400/jd4se/products/872/images/14917/Screen_Shot_2013_06_07_at_4.22.50_PM__57202.1370636718.400.400.png?c=2" class="card-img-top" alt="...">
+          <img src="assets/NoteTakerSS.PNG" class="card-img-top" alt="Note Taker Screenshot">
           <div class="card-body">
-            <p class="card-text">Final</p>
+            <a class="card-text" href="https://fenixtrax18-note-taker.herokuapp.com/">Note Taker</a>
+            <br>
+            <a class="card-text" href="https://github.com/FenixTrax18/Note-Taker">GitHub Repo</a>
           </div>
         </div>
       </div>

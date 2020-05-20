@@ -7,10 +7,11 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <title>My Website</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"/>
-  <link rel="stylesheet" href="style.css"/>
   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet'>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
@@ -27,13 +28,25 @@
           <li class="nav-item active">
             <a class="nav-link" href="index.html">About <span class="sr-only">(current)</span></a>
           </li>
-          <!--CONTACT BUTTON-->
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact</a>
-          </li>
           <!--PORTFOLIO BUTTON/DROPDOWN MENU-->
           <li class="nav-item dropdown">
             <a class="nav-link" href="portfolio.html">Portfolio</a>
+          </li>
+          <!-- GitHub -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://github.com/FenixTrax18" target="_blank">GitHub<span class="sr-only"></span></a>
+          </li>
+          <!-- LinkedIn -->
+          <li class="nav-item">
+            <a class="nav-link" href="https://www.linkedin.com/in/juliahopkinsms/" target="_blank">LinkedIn <span class="sr-only"></span></a>
+          </li>
+          <!-- Resume -->
+          <li class="nav-item">
+            <a class="nav-link" href="assets/Julia Hopkins Resume.pdf" target="_blank">Resume<span class="sr-only"></span></a>
+          </li>
+          <!--CONTACT BUTTON-->
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
           </li>
         </ul>
       </div>
@@ -52,22 +65,24 @@
 
   <section class="row">
     <div class="col-md-3">
-      <img src="J&K.jpg" alt="My face" class="img-thumbnail">
+      <img src="assets/J&K.jpg" alt="My face" class="img-thumbnail">
     </div>
-    <summary class="col-md-9">
+    <summary class="col-md-9 bio">
+      <p>
+        I am a level 9 Inox Brute with 26 HP. My favorite abilities are Skewer and Juggernaut
       <p>
         I grew up in Maryland (Go Ravens!). I have always enjoyed computers, technology, and building new things. </p>
       <p>
         I currently work as a cybersecurity analyst. I am striving to learn more development so that it will help me to advance my career. </p>
       <p>
-        I enjoy long walks with my dog, going to the gym, painting, building legos, reading comics, and playing video games.</p>
+        My hobbies include long walks with my dog, going to the gym, painting, building Legos, reading comics, and gaming.</p>
     </summary>
   </section>
 </main>
 
   <!--Quote-->
   <section class="card">
-    <div class="card-header" style="background-color: darkblue;">
+    <div class="card-header quote" style="background-color: darkblue;">
       Favorite Quote
     </div>
     <div class="card-body">
@@ -81,5 +96,5 @@
 </body>
 
 <footer class="pageFooter">
-    &copy A Hoppy Original &#9884
+    <span class="hoppy">&copy A Hoppy Original </span> <span>&#9884</span>
 </footer>
